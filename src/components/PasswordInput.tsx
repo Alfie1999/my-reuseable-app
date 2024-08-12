@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import styles from "./password-input.css";
 
 interface PasswordInputProps {
   value: string;
@@ -9,7 +10,7 @@ interface PasswordInputProps {
   required?: boolean;
 }
 
-export const PasswordInput: React.FC<PasswordInputProps> = ({
+const PasswordInput: React.FC<PasswordInputProps> = ({
   value,
   onChange,
   placeholder = "Password",
@@ -22,15 +23,19 @@ export const PasswordInput: React.FC<PasswordInputProps> = ({
   };
 
   return (
-    <div>
+    <div className={styles.passwordContainer}>
       <input
         type={showPassword ? "text" : "password"}
         value={value}
         placeholder={placeholder}
         onChange={onChange}
         required={required}
+        className={styles.input}
       />
-      <span onClick={togglePasswordVisibility}>
+      <span
+        className={styles.passwordToggleIcon}
+        onClick={togglePasswordVisibility}
+      >
         <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
       </span>
     </div>
