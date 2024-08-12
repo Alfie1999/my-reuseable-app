@@ -19,7 +19,8 @@
     "resolveJsonModule": true,        // Allow importing of JSON modules
     "isolatedModules": true,     // Ensure all files can be transpiled independently
     "noEmit": false,     
-    "jsx": "react-jsx"                // JSX code generation
+    "jsx": "react-jsx",                // JSX code generation
+    "declaration": true,       // Add this line
   },
   "include": ["src/**/*"],            // Files to include in the compilation
   "exclude": ["node_modules", "dist",  "demo"] // Files to exclude from the compilation
