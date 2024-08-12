@@ -11,7 +11,7 @@ interface PasswordInputProps {
   required?: boolean;
 }
 
-export const PasswordInput: React.FC<PasswordInputProps> = ({
+const PasswordInput: React.FC<PasswordInputProps> = ({
   value,
   onChange,
   placeholder = "Password",
