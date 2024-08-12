@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "tsc && copyfiles -u 1 src/styles/**/* dist",
+    "build": "tsc && copyfiles -u 1 src/**/*.css dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
