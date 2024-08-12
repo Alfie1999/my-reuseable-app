@@ -12,6 +12,7 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <React.StrictMode>
+      <Hello />
       <App />
     </React.StrictMode>
   );
