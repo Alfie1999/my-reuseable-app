@@ -1,25 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "outDir": "./dist",                // Directory for compiled output
+    "target": "es5",                   // ECMAScript target version
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "allowJs": true,                  // Allow JavaScript files to be compiled
+    "skipLibCheck": true,             // Skip type checking of declaration files
+    "esModuleInterop": true,          // Enable compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "strict": true,                   // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Ensure file names are case-consistent
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough between switch cases
+    "module": "esnext",               // Module code generation
+    "moduleResolution": "node",       // Module resolution strategy
+    "resolveJsonModule": true,        // Allow importing of JSON modules
+    "isolatedModules": true,          // Ensure all files can be transpiled independently
+    "jsx": "react-jsx"                // JSX code generation
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*"],            // Files to include in the compilation
+  "exclude": ["node_modules", "dist"] // Files to exclude from the compilation
 }
