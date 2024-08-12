@@ -17,7 +17,8 @@
     "module": "esnext",               // Module code generation
     "moduleResolution": "node",       // Module resolution strategy
     "resolveJsonModule": true,        // Allow importing of JSON modules
-    "isolatedModules": true,          // Ensure all files can be transpiled independently
+    "isolatedModules": true,     // Ensure all files can be transpiled independently
+    "noEmit": false,     
     "jsx": "react-jsx"                // JSX code generation
   },
   "include": ["src/**/*"],            // Files to include in the compilation
