@@ -23,5 +23,5 @@
     "declaration": true,       // Add this line
   },
   "include": ["src/**/*"],            // Files to include in the compilation
-  "exclude": ["node_modules", "dist",  "demo"] // Files to exclude from the compilation
+  "exclude": ["node_modules", "dist", "demo"] // Files to exclude from the compilation
 }
