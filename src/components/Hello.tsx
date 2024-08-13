@@ -1,12 +1,19 @@
 // src/components/Hello.tsx
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 import styles from "./password-input.module.css";
 
 export const Hello: React.FC = () => {
   return (
-    <h1>
-      <div className={styles.passwordContainer}>Hello, World!</div>
-    </h1>
+    <div>
+      <div className={styles.passwordContainer}>
+        <h1>Hello, World!</h1>
+      </div>
+      <span className={styles.passwordToggleIcon}>
+        <FontAwesomeIcon icon={faEye} />
+      </span>
+    </div>
   );
 };
 
