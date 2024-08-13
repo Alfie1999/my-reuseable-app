@@ -4,16 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import styles from "./password-input.module.css";
 
-interface PasswordInputProps {
+interface PasswordInputProps2 {
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   required?: boolean;
 }
 
-export const PasswordInput2: React.FC<PasswordInputProps> = ({
+export const PasswordInput2: React.FC<PasswordInputProps2> = ({
   value,
-  onChange,
   placeholder = "Password",
   required = true,
 }) => {

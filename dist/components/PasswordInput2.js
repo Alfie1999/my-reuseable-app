@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import styles from "./password-input.module.css";
 export var PasswordInput2 = function (_a) {
-    var value = _a.value, onChange = _a.onChange, _b = _a.placeholder, placeholder = _b === void 0 ? "Password" : _b, _c = _a.required, required = _c === void 0 ? true : _c;
+    var value = _a.value, _b = _a.placeholder, placeholder = _b === void 0 ? "Password" : _b, _c = _a.required, required = _c === void 0 ? true : _c;
     return (_jsxs("div", { children: [_jsx("div", __assign({ className: styles.passwordContainer }, { children: _jsx("h1", { children: "Hello, World!" }) })), _jsx("span", __assign({ className: styles.passwordToggleIcon }, { children: _jsx(FontAwesomeIcon, { icon: faEye }) }))] }));
 };
 export default PasswordInput2;
