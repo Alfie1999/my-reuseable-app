@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import styles from "./password-input.module.css"; // Updated import
+import styles from "../password/password-input.module.css";
 
 interface PasswordInputProps {
   value: string;
