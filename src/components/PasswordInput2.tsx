@@ -10,11 +10,7 @@ interface PasswordInputProps2 {
   required?: boolean;
 }
 
-export const PasswordInput2: React.FC<PasswordInputProps2> = ({
-  value,
-  placeholder = "Password",
-  required = true,
-}) => {
+export const PasswordInput2: React.FC = () => {
   return (
     <div>
       <div className={styles.passwordContainer}>

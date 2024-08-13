@@ -1,8 +1,3 @@
 import React from "react";
-interface PasswordInputProps2 {
-    value: string;
-    placeholder?: string;
-    required?: boolean;
-}
-export declare const PasswordInput2: React.FC<PasswordInputProps2>;
+export declare const PasswordInput2: React.FC;
 export default PasswordInput2;
