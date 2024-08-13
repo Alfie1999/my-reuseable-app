@@ -9,11 +9,9 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { jsx as _jsx } from "react/jsx-runtime";
 import styles from "./password-input.module.css";
 export var PasswordInput2 = function () {
-    return (_jsxs("div", { children: [_jsx("div", __assign({ className: styles.passwordContainer }, { children: _jsx("h1", { children: "Hello, World!" }) })), _jsx("span", __assign({ className: styles.passwordToggleIcon }, { children: _jsx(FontAwesomeIcon, { icon: faEye }) }))] }));
+    return (_jsx("div", { children: _jsx("div", __assign({ className: styles.passwordContainer }, { children: _jsx("h1", { children: "Hello, World!" }) })) }));
 };
 export default PasswordInput2;

@@ -16,9 +16,6 @@ export const PasswordInput2: React.FC = () => {
       <div className={styles.passwordContainer}>
         <h1>Hello, World!</h1>
       </div>
-      <span className={styles.passwordToggleIcon}>
-        <FontAwesomeIcon icon={faEye} />
-      </span>
     </div>
   );
 };
