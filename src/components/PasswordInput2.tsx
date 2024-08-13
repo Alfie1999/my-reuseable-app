@@ -1,43 +1,29 @@
-// src/components/PasswordInput.tsx
-import React, { useState } from "react";
+// src/components/Hello.tsx
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 import styles from "./password-input.module.css";
 
-interface PasswordInputProps2 {
+interface PasswordInputProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   required?: boolean;
 }
 
-export const PasswordInput2: React.FC<PasswordInputProps2> = ({
+export const PasswordInput2: React.FC<PasswordInputProps> = ({
   value,
   onChange,
   placeholder = "Password",
   required = true,
 }) => {
-  const [showPassword, setShowPassword] = useState(false);
-
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
-
   return (
-    <div className={styles.passwordContainer}>
-      <input
-        type={showPassword ? "text" : "password"}
-        value={value}
-        placeholder={placeholder}
-        onChange={onChange}
-        required={required}
-        className={styles.input}
-      />
-      <span
-        className={styles.passwordToggleIcon}
-        onClick={togglePasswordVisibility}
-      >
-        <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+    <div>
+      <div className={styles.passwordContainer}>
+        <h1>Hello, World!</h1>
+      </div>
+      <span className={styles.passwordToggleIcon}>
+        <FontAwesomeIcon icon={faEye} />
       </span>
     </div>
   );
